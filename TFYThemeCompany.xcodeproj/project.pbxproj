@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36E638D72B70802300BED3A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E638D62B70802300BED3A5 /* AppDelegate.m */; };
+		36E638DA2B70802300BED3A5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E638D92B70802300BED3A5 /* SceneDelegate.m */; };
+		36E638DD2B70802300BED3A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E638DC2B70802300BED3A5 /* ViewController.m */; };
+		36E638E02B70802300BED3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E638DE2B70802300BED3A5 /* Main.storyboard */; };
+		36E638E22B70802400BED3A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E638E12B70802400BED3A5 /* Assets.xcassets */; };
+		36E638E52B70802400BED3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E638E32B70802400BED3A5 /* LaunchScreen.storyboard */; };
+		36E638E82B70802400BED3A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E638E72B70802400BED3A5 /* main.m */; };
+		36E638F22B70802400BED3A5 /* TFYThemeCompanyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E638F12B70802400BED3A5 /* TFYThemeCompanyTests.m */; };
+		36E638FC2B70802400BED3A5 /* TFYThemeCompanyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E638FB2B70802400BED3A5 /* TFYThemeCompanyUITests.m */; };
+		36E638FE2B70802400BED3A5 /* TFYThemeCompanyUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E638FD2B70802400BED3A5 /* TFYThemeCompanyUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36E638EE2B70802400BED3A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36E638CA2B70802300BED3A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36E638D12B70802300BED3A5;
+			remoteInfo = TFYThemeCompany;
+		};
+		36E638F82B70802400BED3A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36E638CA2B70802300BED3A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36E638D12B70802300BED3A5;
+			remoteInfo = TFYThemeCompany;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36E638D22B70802300BED3A5 /* TFYThemeCompany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFYThemeCompany.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E638D52B70802300BED3A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36E638D62B70802300BED3A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36E638D82B70802300BED3A5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		36E638D92B70802300BED3A5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		36E638DB2B70802300BED3A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36E638DC2B70802300BED3A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36E638DF2B70802300BED3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36E638E12B70802400BED3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36E638E42B70802400BED3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36E638E62B70802400BED3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E638E72B70802400BED3A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36E638ED2B70802400BED3A5 /* TFYThemeCompanyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFYThemeCompanyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E638F12B70802400BED3A5 /* TFYThemeCompanyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFYThemeCompanyTests.m; sourceTree = "<group>"; };
+		36E638F72B70802400BED3A5 /* TFYThemeCompanyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFYThemeCompanyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E638FB2B70802400BED3A5 /* TFYThemeCompanyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFYThemeCompanyUITests.m; sourceTree = "<group>"; };
+		36E638FD2B70802400BED3A5 /* TFYThemeCompanyUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFYThemeCompanyUITestsLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36E638CF2B70802300BED3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E638EA2B70802400BED3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E638F42B70802400BED3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36E638C92B70802300BED3A5 = {
+			isa = PBXGroup;
+			children = (
+				36E638D42B70802300BED3A5 /* TFYThemeCompany */,
+				36E638F02B70802400BED3A5 /* TFYThemeCompanyTests */,
+				36E638FA2B70802400BED3A5 /* TFYThemeCompanyUITests */,
+				36E638D32B70802300BED3A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36E638D32B70802300BED3A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36E638D22B70802300BED3A5 /* TFYThemeCompany.app */,
+				36E638ED2B70802400BED3A5 /* TFYThemeCompanyTests.xctest */,
+				36E638F72B70802400BED3A5 /* TFYThemeCompanyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36E638D42B70802300BED3A5 /* TFYThemeCompany */ = {
+			isa = PBXGroup;
+			children = (
+				36E638D52B70802300BED3A5 /* AppDelegate.h */,
+				36E638D62B70802300BED3A5 /* AppDelegate.m */,
+				36E638D82B70802300BED3A5 /* SceneDelegate.h */,
+				36E638D92B70802300BED3A5 /* SceneDelegate.m */,
+				36E638DB2B70802300BED3A5 /* ViewController.h */,
+				36E638DC2B70802300BED3A5 /* ViewController.m */,
+				36E638DE2B70802300BED3A5 /* Main.storyboard */,
+				36E638E12B70802400BED3A5 /* Assets.xcassets */,
+				36E638E32B70802400BED3A5 /* LaunchScreen.storyboard */,
+				36E638E62B70802400BED3A5 /* Info.plist */,
+				36E638E72B70802400BED3A5 /* main.m */,
+			);
+			path = TFYThemeCompany;
+			sourceTree = "<group>";
+		};
+		36E638F02B70802400BED3A5 /* TFYThemeCompanyTests */ = {
+			isa = PBXGroup;
+			children = (
+				36E638F12B70802400BED3A5 /* TFYThemeCompanyTests.m */,
+			);
+			path = TFYThemeCompanyTests;
+			sourceTree = "<group>";
+		};
+		36E638FA2B70802400BED3A5 /* TFYThemeCompanyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36E638FB2B70802400BED3A5 /* TFYThemeCompanyUITests.m */,
+				36E638FD2B70802400BED3A5 /* TFYThemeCompanyUITestsLaunchTests.m */,
+			);
+			path = TFYThemeCompanyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36E638D12B70802300BED3A5 /* TFYThemeCompany */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36E639012B70802400BED3A5 /* Build configuration list for PBXNativeTarget "TFYThemeCompany" */;
+			buildPhases = (
+				36E638CE2B70802300BED3A5 /* Sources */,
+				36E638CF2B70802300BED3A5 /* Frameworks */,
+				36E638D02B70802300BED3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFYThemeCompany;
+			productName = TFYThemeCompany;
+			productReference = 36E638D22B70802300BED3A5 /* TFYThemeCompany.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36E638EC2B70802400BED3A5 /* TFYThemeCompanyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36E639042B70802400BED3A5 /* Build configuration list for PBXNativeTarget "TFYThemeCompanyTests" */;
+			buildPhases = (
+				36E638E92B70802400BED3A5 /* Sources */,
+				36E638EA2B70802400BED3A5 /* Frameworks */,
+				36E638EB2B70802400BED3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36E638EF2B70802400BED3A5 /* PBXTargetDependency */,
+			);
+			name = TFYThemeCompanyTests;
+			productName = TFYThemeCompanyTests;
+			productReference = 36E638ED2B70802400BED3A5 /* TFYThemeCompanyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36E638F62B70802400BED3A5 /* TFYThemeCompanyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36E639072B70802400BED3A5 /* Build configuration list for PBXNativeTarget "TFYThemeCompanyUITests" */;
+			buildPhases = (
+				36E638F32B70802400BED3A5 /* Sources */,
+				36E638F42B70802400BED3A5 /* Frameworks */,
+				36E638F52B70802400BED3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36E638F92B70802400BED3A5 /* PBXTargetDependency */,
+			);
+			name = TFYThemeCompanyUITests;
+			productName = TFYThemeCompanyUITests;
+			productReference = 36E638F72B70802400BED3A5 /* TFYThemeCompanyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36E638CA2B70802300BED3A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					36E638D12B70802300BED3A5 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					36E638EC2B70802400BED3A5 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 36E638D12B70802300BED3A5;
+					};
+					36E638F62B70802400BED3A5 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 36E638D12B70802300BED3A5;
+					};
+				};
+			};
+			buildConfigurationList = 36E638CD2B70802300BED3A5 /* Build configuration list for PBXProject "TFYThemeCompany" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36E638C92B70802300BED3A5;
+			productRefGroup = 36E638D32B70802300BED3A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36E638D12B70802300BED3A5 /* TFYThemeCompany */,
+				36E638EC2B70802400BED3A5 /* TFYThemeCompanyTests */,
+				36E638F62B70802400BED3A5 /* TFYThemeCompanyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36E638D02B70802300BED3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E638E52B70802400BED3A5 /* LaunchScreen.storyboard in Resources */,
+				36E638E22B70802400BED3A5 /* Assets.xcassets in Resources */,
+				36E638E02B70802300BED3A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E638EB2B70802400BED3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E638F52B70802400BED3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36E638CE2B70802300BED3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E638DD2B70802300BED3A5 /* ViewController.m in Sources */,
+				36E638D72B70802300BED3A5 /* AppDelegate.m in Sources */,
+				36E638E82B70802400BED3A5 /* main.m in Sources */,
+				36E638DA2B70802300BED3A5 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E638E92B70802400BED3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E638F22B70802400BED3A5 /* TFYThemeCompanyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E638F32B70802400BED3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E638FE2B70802400BED3A5 /* TFYThemeCompanyUITestsLaunchTests.m in Sources */,
+				36E638FC2B70802400BED3A5 /* TFYThemeCompanyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36E638EF2B70802400BED3A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36E638D12B70802300BED3A5 /* TFYThemeCompany */;
+			targetProxy = 36E638EE2B70802400BED3A5 /* PBXContainerItemProxy */;
+		};
+		36E638F92B70802400BED3A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36E638D12B70802300BED3A5 /* TFYThemeCompany */;
+			targetProxy = 36E638F82B70802400BED3A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36E638DE2B70802300BED3A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36E638DF2B70802300BED3A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36E638E32B70802400BED3A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36E638E42B70802400BED3A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36E638FF2B70802400BED3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		36E639002B70802400BED3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36E639022B70802400BED3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2J3K32HV5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TFYThemeCompany/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TFYThemeCompany;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36E639032B70802400BED3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2J3K32HV5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TFYThemeCompany/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TFYThemeCompany;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		36E639052B70802400BED3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2J3K32HV5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TFYThemeCompanyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFYThemeCompany.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TFYThemeCompany";
+			};
+			name = Debug;
+		};
+		36E639062B70802400BED3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2J3K32HV5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TFYThemeCompanyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFYThemeCompany.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TFYThemeCompany";
+			};
+			name = Release;
+		};
+		36E639082B70802400BED3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2J3K32HV5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TFYThemeCompanyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFYThemeCompany;
+			};
+			name = Debug;
+		};
+		36E639092B70802400BED3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2J3K32HV5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TFYThemeCompanyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFYThemeCompany;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36E638CD2B70802300BED3A5 /* Build configuration list for PBXProject "TFYThemeCompany" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E638FF2B70802400BED3A5 /* Debug */,
+				36E639002B70802400BED3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36E639012B70802400BED3A5 /* Build configuration list for PBXNativeTarget "TFYThemeCompany" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E639022B70802400BED3A5 /* Debug */,
+				36E639032B70802400BED3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36E639042B70802400BED3A5 /* Build configuration list for PBXNativeTarget "TFYThemeCompanyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E639052B70802400BED3A5 /* Debug */,
+				36E639062B70802400BED3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36E639072B70802400BED3A5 /* Build configuration list for PBXNativeTarget "TFYThemeCompanyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E639082B70802400BED3A5 /* Debug */,
+				36E639092B70802400BED3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36E638CA2B70802300BED3A5 /* Project object */;
+}
