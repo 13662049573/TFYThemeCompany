@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFYThemeKit"
 
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
 
   spec.summary      = "主题配置，自定义和网络都可以使用，最低支持iOS13以上版本。"
 
