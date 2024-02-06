@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'TFYThemeKit' do |ss|
 
-    ss.source_files = "TFYThemeCompany/TFYThemeKit/TFYThemeKit/*.{h,m}"
+    ss.source_files = "TFYThemeCompany/TFYThemeKit/*.{h,m}"
 
     ss.subspec 'TFYminizip' do |s|
         s.source_files  = "TFYThemeCompany/TFYThemeKit/TFYminizip/*.{h,c}"
