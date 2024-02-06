@@ -63,9 +63,9 @@ PODS:
   - TFY_Navigation (2.9.9):
     - TFY_Navigation/TFY_NavControoler (= 2.9.9)
   - TFY_Navigation/TFY_NavControoler (2.9.9)
-  - TFY_TabBarKit (1.2.9):
-    - TFY_TabBarKit/TFY_SystemTabBar (= 1.2.9)
-  - TFY_TabBarKit/TFY_SystemTabBar (1.2.9)
+  - TFY_TabBarKit (1.3.0):
+    - TFY_TabBarKit/TFY_SystemTabBar (= 1.3.0)
+  - TFY_TabBarKit/TFY_SystemTabBar (1.3.0)
   - TFYCrashSDK (1.2.8):
     - TFYCrashSDK/TFYCrashSDK (= 1.2.8)
   - TFYCrashSDK/TFYARC (1.2.8):
@@ -108,7 +108,7 @@ SPEC CHECKSUMS:
   SDWebImage: fc8f2d48bbfd72ef39d70e981bd24a3f3be53fec
   TFY_LayoutCategoryKit: e355ee90a695a12ca1e477268571a878372266b6
   TFY_Navigation: c91d8e82ddecbaa39497fb9c9c0cadb887911a38
-  TFY_TabBarKit: 371aa872a5312a67a1a891b23159c157ef8a7561
+  TFY_TabBarKit: 7d0b06302603714fa8124dbe67f6c3dcdb9cbf6f
   TFYCrashSDK: a8a437b0e24db8398b23b7f377cc5431eb26b3c3
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 

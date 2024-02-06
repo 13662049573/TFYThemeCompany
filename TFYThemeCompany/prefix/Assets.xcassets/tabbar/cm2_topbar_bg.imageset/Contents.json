@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "cm2_topbar_bg.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

@@ -9,10 +9,10 @@
 #import "TFY_NavigationController.h"
 #import <objc/runtime.h>
 
-#if __has_include(<TFYThemeKit.h>)
-#import <TFYThemeKit.h>
-#elif __has_include("TFYThemeKit.h")
-#import "TFYThemeKit.h"
+#define HasTFYThemeKit (__has_include(<TFYThemeKit/TFYThemeKit.h>))
+
+#if HasTFYThemeKit
+#import <TFYThemeKit/TFYThemeKit.h>
 #endif
 
 @interface NSArray<ObjectType> (TFY_NavigationController)
@@ -380,7 +380,7 @@ __attribute((overloadable)) static inline UIViewController *TFYSafeWrapViewContr
     } else {
         self.navigationBar.translucent = NO;
         
-#if __has_include(<TFYThemeKit.h>) || __has_include("TFYThemeKit.h")
+#if HasTFYThemeKit
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setNavigationBackground) name:TFYThemeUpdateCompletedNotification object:nil];
         
         [self setNavigationBackground];
@@ -391,7 +391,7 @@ __attribute((overloadable)) static inline UIViewController *TFYSafeWrapViewContr
     }
 }
 
-#if __has_include(<TFYThemeKit.h>) || __has_include("TFYThemeKit.h")
+#if HasTFYThemeKit
 /// 设置导航栏颜色
 -(void)setNavigationBackground {
     NSDictionary *dic = @{NSForegroundColorAttributeName : [UIColor blackColor],

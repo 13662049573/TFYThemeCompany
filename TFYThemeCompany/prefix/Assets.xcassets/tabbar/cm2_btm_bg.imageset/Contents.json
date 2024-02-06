@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "cm2_btm_bg.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
