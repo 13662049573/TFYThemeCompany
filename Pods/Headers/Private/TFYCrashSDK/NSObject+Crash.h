@@ -1,0 +1,1 @@
+../../../TFYCrashSDK/TFYCrashException/TFYCrashSDK/TFYItools/NSObject+Crash.h

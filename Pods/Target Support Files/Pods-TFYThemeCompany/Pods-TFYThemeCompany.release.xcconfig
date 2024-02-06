@@ -1,0 +1,13 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+ENABLE_STRICT_OBJC_MSGSEND = NO
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 NDEBUG=1 _DEBUG_TAG_
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/TFYCrashSDK" "${PODS_ROOT}/Headers/Public/TFY_LayoutCategoryKit" "${PODS_ROOT}/Headers/Public/TFY_Navigation" "${PODS_ROOT}/Headers/Public/TFY_TabBarKit" "${PODS_ROOT}/Headers/Public/YYModel" $(SDKROOT)/usr/include
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/TFYCrashSDK" "${PODS_CONFIGURATION_BUILD_DIR}/TFY_LayoutCategoryKit" "${PODS_CONFIGURATION_BUILD_DIR}/TFY_Navigation" "${PODS_CONFIGURATION_BUILD_DIR}/TFY_TabBarKit" "${PODS_CONFIGURATION_BUILD_DIR}/YYModel"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/TFYCrashSDK" -isystem "${PODS_ROOT}/Headers/Public/TFY_LayoutCategoryKit" -isystem "${PODS_ROOT}/Headers/Public/TFY_Navigation" -isystem "${PODS_ROOT}/Headers/Public/TFY_TabBarKit" -isystem "${PODS_ROOT}/Headers/Public/YYModel"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Masonry" -l"SDWebImage" -l"TFYCrashSDK" -l"TFY_LayoutCategoryKit" -l"TFY_Navigation" -l"TFY_TabBarKit" -l"YYModel" -framework "CoreFoundation" -framework "Foundation" -framework "ImageIO" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

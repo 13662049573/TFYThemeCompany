@@ -1,0 +1,1 @@
+../../../TFYCrashSDK/TFYCrashException/TFYCrashSDK/TFYMRC/NSObject+CrashSelector.h
