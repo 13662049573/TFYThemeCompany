@@ -10,12 +10,6 @@
 #import "TFY_NavigationController.h"
 #import <objc/runtime.h>
 
-#define HasTFYThemeKit (__has_include(<TFYThemeKit/TFYThemeKit.h>))
-
-#if HasTFYThemeKit
-#import <TFYThemeKit/TFYThemeKit.h>
-#endif
-
 CG_INLINE BOOL Nav_iPhoneX(void) {
     return ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? ((NSInteger)(([[UIScreen mainScreen] currentMode].size.height/[[UIScreen mainScreen] currentMode].size.width)*100) == 216) : NO);
 }
@@ -116,8 +110,6 @@ CG_INLINE CGFloat Nav_kNavBarHeight(void) {
 
 /// 设置导航栏颜色
 -(void)setNavigationBackgroundColor:(UIColor *)color {
-#if HasTFYThemeKit
-#else
     NSDictionary *dic = @{NSForegroundColorAttributeName : [UIColor blackColor],
                               NSFontAttributeName : [UIFont systemFontOfSize:16 weight:UIFontWeightMedium]};
     
@@ -139,7 +131,6 @@ CG_INLINE CGFloat Nav_kNavBarHeight(void) {
         [self.navigationController.navigationBar setShadowImage:UIImage.new];
         [self.navigationController.navigationBar setBackgroundImage:[self createImage:color] forBarMetrics:UIBarMetricsDefault];
     }
-#endif
 }
 
 - (UIImage *)createImage:(UIColor *)imageColor {

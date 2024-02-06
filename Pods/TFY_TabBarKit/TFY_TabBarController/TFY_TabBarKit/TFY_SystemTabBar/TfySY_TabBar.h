@@ -10,12 +10,6 @@
 #import "TfySY_TabBarBadge.h"
 #import "TfySY_TabBarItem.h"
 
-#define HasTFYThemeKit (__has_include(<TFYThemeKit/TFYThemeKit.h>))
-
-#if HasTFYThemeKit
-#import <TFYThemeKit/TFYThemeKit.h>
-#endif
-
 NS_ASSUME_NONNULL_BEGIN
 
 @class TfySY_TabBar;
@@ -65,10 +59,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-#if HasTFYThemeKit
 @interface TfySY_TabBar (Theme)
 - (void)tfy_backgroundImageNamed:(NSString *)name;
 @end
-#endif
 
 NS_ASSUME_NONNULL_END
