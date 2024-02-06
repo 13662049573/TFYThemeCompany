@@ -24,10 +24,13 @@ Pod::Spec.new do |spec|
   spec.source_files  = "TFYThemeCompany/TFYThemeKit/TFYThemeKit.h"
   
   spec.subspec 'TFY_NavControoler' do |ss|
+
     ss.source_files = "TFYThemeCompany/TFYThemeKit/TFYThemeKit/**/*.{h,m}"
-    ss.resources    = "TFYThemeCompany/TFYThemeKit/TFYThemeKit/TFYThemeKit.bundle"
+
+    ss.resources    = "TFYThemeCompany/TFYThemeKit/TFYThemeKit.bundle"
+
     ss.subspec 'TFYminizip' do |s|
-        s.source_files  = "TFYThemeKit/TFYThemeKit/TFYminizip/**/*.{h,c}"
+        s.source_files  = "TFYThemeCompany/TFYThemeKit/TFYminizip/**/*.{h,c}"
      end
   end
 
