@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFYThemeKit"
 
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
 
   spec.summary      = "主题配置，自定义和网络都可以使用，最低支持iOS13以上版本。"
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'TFY_NavControoler' do |ss|
     ss.source_files = "TFYThemeCompany/TFYThemeKit/TFYThemeKit/**/*.{h,m}"
-    ss.resources    = "TFYThemeKit/TFYThemeKit/TFYThemeKit.bundle"
+    ss.resources    = "TFYThemeCompany/TFYThemeKit/TFYThemeKit/TFYThemeKit.bundle"
     ss.subspec 'TFYminizip' do |s|
         s.source_files  = "TFYThemeKit/TFYThemeKit/TFYminizip/**/*.{h,c}"
      end
