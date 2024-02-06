@@ -624,6 +624,7 @@ static NSPointerArray *themeHashTable;
 @implementation TFYContainerNavigationController (navTheme)
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationBar.translucent = NO;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setNavigationBackground) name:TFYThemeUpdateCompletedNotification object:nil];
     [self setNavigationBackground];
 }

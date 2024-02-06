@@ -9,12 +9,6 @@
 #import "TFY_NavigationController.h"
 #import <objc/runtime.h>
 
-#define HasTFYThemeKit (__has_include(<TFYThemeKit/TFYThemeKit.h>))
-
-#if HasTFYThemeKit
-#import <TFYThemeKit/TFYThemeKit.h>
-#endif
-
 @interface NSArray<ObjectType> (TFY_NavigationController)
 - (NSArray *)tfy_map:(id(^)(ObjectType obj, NSUInteger index))block;
 - (BOOL)tfy_any:(BOOL(^)(ObjectType obj))block;
@@ -379,44 +373,9 @@ __attribute((overloadable)) static inline UIViewController *TFYSafeWrapViewContr
         
     } else {
         self.navigationBar.translucent = NO;
-        
-#if HasTFYThemeKit
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setNavigationBackground) name:TFYThemeUpdateCompletedNotification object:nil];
-        
-        [self setNavigationBackground];
-#else
         [self setNavigationBackgroundColor:UIColor.clearColor];
-        
-#endif
     }
 }
-
-#if HasTFYThemeKit
-/// 设置导航栏颜色
--(void)setNavigationBackground {
-    NSDictionary *dic = @{NSForegroundColorAttributeName : [UIColor blackColor],
-                              NSFontAttributeName : [UIFont systemFontOfSize:16 weight:UIFontWeightMedium]};
-    if (@available(iOS 15.0, *)) {
-        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
-        appearance.backgroundEffect = nil;// 去掉半透明效果
-        appearance.titleTextAttributes = dic;// 标题字体颜色及大小
-        appearance.shadowImage = UIImage.new;// 设置导航栏下边界分割线透明
-        appearance.shadowColor = [UIColor clearColor];// 去除导航栏阴影（如果不设置clear，导航栏底下会有一条阴影线）
-        [appearance tfy_titleTextAttributesColorType:@"ctabh" font:@"f4"];
-        [appearance tfy_backgroundImageNamed:@"cm2_topbar_bg"];
-        
-        self.navigationBar.standardAppearance = appearance;// standardAppearance：常规状态, 标准外观，iOS15之后不设置的时候，导航栏背景透明
-        if (@available(iOS 15.0, *)) {
-         self.navigationBar.scrollEdgeAppearance = appearance;// scrollEdgeAppearance：被scrollview向下拉的状态, 滚动时外观，不设置的时候，使用标准外观
-        }
-    } else {
-        self.navigationBar.titleTextAttributes = dic;
-        [self.navigationBar setShadowImage:UIImage.new];
-        [self.navigationBar tfy_backgroundImageNamed:@"cm2_topbar_bg" forBarMetrics:UIBarMetricsDefault];
-        [self.navigationBar tfy_titleTextAttributesColorType:@"ctabh" font:@"f4"];
-    }
-}
-#endif
 
 - (void)viewDidLayoutSubviews
 {
