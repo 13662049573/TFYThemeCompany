@@ -79,6 +79,7 @@ FOUNDATION_EXPORT  NSString * const THEME_DEFAULT_NAME;
     UIImage
  */
 + (UIImage *)imageNamed:(NSString *)name;
++ (UIImage *)imageNamed:(NSString *)name tintColor:(NSString *)tintColor;
 + (UIImage *)imageForColorType:(NSString *)type size:(CGSize)size;
 
 /**

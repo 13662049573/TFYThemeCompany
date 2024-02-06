@@ -7,13 +7,7 @@
 
 #import "TFYThemeOneController.h"
 #import "TFYThemeThreeController.h"
-#import "TFYThemeKit.h"
-#import "ThemeModel.h"
-#import <TFY_LayoutCategoryKit.h>
 #import "TFYThemeOneCell.h"
-#import <YYModel.h>
-#import <SDWebImage.h>
-#import <TFY_Navigation.h>
 
 @interface TFYThemeOneController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (copy, nonatomic)NSArray<ThemeModel *> *dataArr;
@@ -22,12 +16,6 @@
 
 @implementation TFYThemeOneController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    UIImage *image = (UIImage *)[TFYTheme imageNamed:@"cm2_chat_bg"];
-    self.view.layer.contents = (id)image.CGImage;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -35,7 +23,6 @@
     self.collectionView.makeChain
     .delegate(self)
     .dataSource(self)
-    .contentInset(UIEdgeInsetsMake(10, 10, 10, 10))
     .showsVerticalScrollIndicator(NO)
     .backgroundColor(UIColor.clearColor)
     .registerCellClass(TFYThemeOneCell.class, @"TFYThemeOneCell")
@@ -45,13 +32,6 @@
     });
     
     [self loadData];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(backImageViewthumbnail:) name:@"thumbnail" object:nil];
-}
-
-- (void)backImageViewthumbnail:(NSNotification *)noe {
-    UIImage *image = (UIImage *)[TFYTheme imageNamed:@"cm2_chat_bg"];
-    self.collectionView.layer.contents = (id)image.CGImage;
 }
 
 - (UICollectionView *)collectionView {
@@ -61,6 +41,7 @@
         layout.minimumInteritemSpacing = 0.0;
         layout.minimumLineSpacing = 10.0;
         layout.minimumInteritemSpacing = 10.0;
+        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
         _collectionView.contentInset = UIEdgeInsetsMake(0, 0,TFY_kBottomBarHeight(), 0);

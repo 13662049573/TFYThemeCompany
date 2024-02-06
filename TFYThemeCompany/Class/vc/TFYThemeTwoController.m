@@ -6,26 +6,33 @@
 //
 
 #import "TFYThemeTwoController.h"
-#import <TFY_LayoutCategoryKit.h>
-#import <UIImageView+WebCache.h>
-#import "TFYThemeKit.h"
-#import "ThemeModel.h"
 
 @interface TFYThemeTwoController ()
-
+@property(nonatomic , strong)UIImageView *imageViews;
 @end
 
 @implementation TFYThemeTwoController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    UIImage *image = (UIImage *)[TFYTheme imageNamed:@"cm2_chat_bg"];
-    self.view.layer.contents = (id)image.CGImage;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.imageViews.makeChain
+    .image([UIImage imageNamed:@"cm2_msg_operbar_left"])
+    .addToSuperView(self.view)
+    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+        make.center.equalTo(self.view).offset(0);
+        make.size.mas_equalTo(CGSizeMake(64, 64));
+    });
+    
+    [self.imageViews tfy_imageWithName:@"cm2_msg_operbar_left" tintColor:@"c8"];
+}
+
+- (UIImageView *)imageViews {
+    if (!_imageViews) {
+        _imageViews = UIImageView.new;
+        _imageViews.contentMode = UIViewContentModeScaleAspectFit;
+    }
+    return _imageViews;
 }
 
 @end

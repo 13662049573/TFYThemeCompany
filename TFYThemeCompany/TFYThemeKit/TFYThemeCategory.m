@@ -524,6 +524,10 @@ static NSPointerArray *themeHashTable;
     [self tfy_setThemePicker:self selector:@"setImage:" picker:[TFYThemePicker initWithImageColorType:type size:size]];
 }
 
+- (void)tfy_imageWithName:(NSString *)name tintColor:(NSString *)tintColor {
+    [self tfy_setThemePicker:self selector:@"setImage:" picker:[TFYThemePicker initWithImageName:name tintColor:tintColor]];
+}
+
 @end
 
 @implementation CALayer (Theme)
@@ -616,4 +620,96 @@ static NSPointerArray *themeHashTable;
 }
 @end
 
+#if HasTFYNavKit
+@implementation TFYContainerNavigationController (navTheme)
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setNavigationBackground) name:TFYThemeUpdateCompletedNotification object:nil];
+    [self setNavigationBackground];
+}
+/// 设置导航栏颜色
+-(void)setNavigationBackground {
+    NSDictionary *dic = @{NSForegroundColorAttributeName : [UIColor blackColor],
+                              NSFontAttributeName : [UIFont systemFontOfSize:16 weight:UIFontWeightMedium]};
+    if (@available(iOS 15.0, *)) {
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+        appearance.backgroundEffect = nil;// 去掉半透明效果
+        appearance.titleTextAttributes = dic;// 标题字体颜色及大小
+        appearance.shadowImage = UIImage.new;// 设置导航栏下边界分割线透明
+        appearance.shadowColor = [UIColor clearColor];// 去除导航栏阴影（如果不设置clear，导航栏底下会有一条阴影线）
+        [appearance tfy_titleTextAttributesColorType:@"ctabh" font:@"f4"];
+        [appearance tfy_backgroundImageNamed:@"cm2_topbar_bg"];
+        
+        self.navigationBar.standardAppearance = appearance;// standardAppearance：常规状态, 标准外观，iOS15之后不设置的时候，导航栏背景透明
+        if (@available(iOS 15.0, *)) {
+         self.navigationBar.scrollEdgeAppearance = appearance;// scrollEdgeAppearance：被scrollview向下拉的状态, 滚动时外观，不设置的时候，使用标准外观
+        }
+    } else {
+        self.navigationBar.titleTextAttributes = dic;
+        [self.navigationBar setShadowImage:UIImage.new];
+        [self.navigationBar tfy_backgroundImageNamed:@"cm2_topbar_bg" forBarMetrics:UIBarMetricsDefault];
+        [self.navigationBar tfy_titleTextAttributesColorType:@"ctabh" font:@"f4"];
+    }
+}
+@end
+#endif
 
+#if HasTFYTabbarKit
+@implementation TfySY_TabBar (tabbarTheme)
+- (void)tfy_backgroundImageNamed:(NSString *)name {
+    [self tfy_setThemePicker:self selector:@"setThemeImage:" picker:[TFYThemePicker initWithImageName:name]];
+}
+@end
+@implementation TfySY_TabBarConfigModel (tabbarTheme)
+- (void)tfy_imageInsets:(NSString *)type {
+    [self tfy_setThemePicker:self selector:@"setComponentMargin:"
+                  picker:[TFYThemePicker initWithImageInsets:type]];
+}
+
+- (void)tfy_imageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode {
+    [self tfy_setThemePicker:self selector:@"setNormalImage:"
+                  picker:[TFYThemePicker initWithImageName:name renderingMode:mode]];
+}
+
+- (void)tfy_selectedImageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode {
+    [self tfy_setThemePicker:self selector:@"setSelectImage:"
+                  picker:[TFYThemePicker initWithImageName:name renderingMode:mode]];
+}
+
+- (void)tfy_titleTextColorType:(NSString *)colorType font:(NSString *)fontType {
+    [self tfy_setThemePicker:self selector:@"setNormalColor:"
+                  picker:[TFYThemePicker initWithColorType:fontType]];
+}
+
+- (void)tfy_selectedtitleTextColorType:(NSString *)colorType font:(NSString *)fontType {
+    [self tfy_setThemePicker:self selector:@"setSelectColor:"
+                  picker:[TFYThemePicker initWithColorType:fontType]];
+}
+@end
+@implementation TfySY_TabBarItem (tabbarTheme)
+- (void)tfy_imageInsets:(NSString *)type {
+    [self tfy_setThemePicker:self selector:@"setComponentMargin:"
+                  picker:[TFYThemePicker initWithImageInsets:type]];
+}
+
+- (void)tfy_imageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode {
+    [self tfy_setThemePicker:self selector:@"setNormalImage:"
+                  picker:[TFYThemePicker initWithImageName:name renderingMode:mode]];
+}
+
+- (void)tfy_selectedImageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode {
+    [self tfy_setThemePicker:self selector:@"setSelectImage:"
+                  picker:[TFYThemePicker initWithImageName:name renderingMode:mode]];
+}
+
+- (void)tfy_titleTextColorType:(NSString *)colorType font:(NSString *)fontType {
+    [self tfy_setThemePicker:self selector:@"setNormalColor:"
+                  picker:[TFYThemePicker initWithColorType:fontType]];
+}
+
+- (void)tfy_selectedtitleTextColorType:(NSString *)colorType font:(NSString *)fontType {
+    [self tfy_setThemePicker:self selector:@"setSelectColor:"
+                  picker:[TFYThemePicker initWithColorType:fontType]];
+}
+@end
+#endif

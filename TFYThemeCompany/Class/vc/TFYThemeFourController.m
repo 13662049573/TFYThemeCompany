@@ -6,19 +6,12 @@
 //
 
 #import "TFYThemeFourController.h"
-#import "TFYThemeKit.h"
 
 @interface TFYThemeFourController ()
 
 @end
 
 @implementation TFYThemeFourController
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    UIImage *image = (UIImage *)[TFYTheme imageNamed:@"cm2_chat_bg"];
-    self.view.layer.contents = (id)image.CGImage;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

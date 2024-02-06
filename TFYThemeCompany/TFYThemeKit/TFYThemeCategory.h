@@ -8,6 +8,17 @@
 #import <Foundation/Foundation.h>
 #import "TFYThemePicker.h"
 
+#define HasTFYNavKit (__has_include(<TFY_Navigation/TFY_Navigation.h>))
+#define HasTFYTabbarKit (__has_include(<TFY_TabBarKit/TFY_TabBarKit.h>))
+
+#if HasTFYNavKit
+#import <TFY_Navigation/TFY_Navigation.h>
+#endif
+
+#if HasTFYTabbarKit
+#import <TFY_TabBarKit/TFY_TabBarKit.h>
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 
 // 更新完成通知
@@ -96,6 +107,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImageView (Theme)
 - (void)tfy_imageNamed:(NSString *)name;
 - (void)tfy_imageWithColorType:(NSString *)type size:(CGSize)size;
+- (void)tfy_imageWithName:(NSString *)name tintColor:(NSString *)tintColor;
 @end
 
 @interface CALayer (Theme)
@@ -139,5 +151,32 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)tfy_barTintColor:(NSString *)type;
 @end
 
+
+#if HasTFYNavKit
+@interface TFYContainerNavigationController (navTheme)
+@end
+#endif
+
+#if HasTFYTabbarKit
+@interface TfySY_TabBar (tabbarTheme)
+- (void)tfy_backgroundImageNamed:(NSString *)name;
+@end
+
+@interface TfySY_TabBarConfigModel (tabbarTheme)
+- (void)tfy_imageInsets:(NSString *)type;
+- (void)tfy_imageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
+- (void)tfy_selectedImageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
+- (void)tfy_titleTextColorType:(NSString *)colorType font:(NSString *)fontType;
+- (void)tfy_selectedtitleTextColorType:(NSString *)colorType font:(NSString *)fontType;
+@end
+
+@interface TfySY_TabBarItem (tabbarTheme)
+- (void)tfy_imageInsets:(NSString *)type;
+- (void)tfy_imageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
+- (void)tfy_selectedImageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
+- (void)tfy_titleTextColorType:(NSString *)colorType font:(NSString *)fontType;
+- (void)tfy_selectedtitleTextColorType:(NSString *)colorType font:(NSString *)fontType;
+@end
+#endif
 
 NS_ASSUME_NONNULL_END

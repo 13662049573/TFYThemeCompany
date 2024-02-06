@@ -36,6 +36,14 @@
     return picker;
 }
 
++ (instancetype)initWithImageName:(NSString *)name tintColor:(NSString *)tintColor {
+    TFYThemePicker *picker = [[TFYThemePicker alloc]init];
+    picker.block = ^() {
+       return [TFYTheme imageNamed:name tintColor:tintColor];
+    };
+    return picker;
+}
+
 + (instancetype)initWithImageColorType:(NSString *)type size:(CGSize)size {
     TFYThemePicker *picker = [[TFYThemePicker alloc]init];
     picker.block = ^() {

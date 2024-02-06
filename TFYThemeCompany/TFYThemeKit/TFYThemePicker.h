@@ -32,6 +32,7 @@ typedef id _Nonnull (^ThemePickerBlock)(void);
 + (instancetype)initWithFontType:(NSString *)type;
 + (instancetype)initWithColorType:(NSString *)type;
 + (instancetype)initWithImageName:(NSString *)name;
++ (instancetype)initWithImageName:(NSString *)name tintColor:(NSString *)tintColor;
 + (instancetype)initWithImageColorType:(NSString *)type size:(CGSize)size;
 + (instancetype)initWithImageName:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
 + (instancetype)initTextAttributesColorType:(NSString *)color font:(NSString *)font;

@@ -39,6 +39,7 @@
 		36E639902B7105F500BED3A5 /* DIN-BoldItalicExp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36E6398C2B7105F500BED3A5 /* DIN-BoldItalicExp.otf */; };
 		36E639912B7105F500BED3A5 /* DIN-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36E6398D2B7105F500BED3A5 /* DIN-BlackItalic.otf */; };
 		36E639962B71E62600BED3A5 /* TFYThemeKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 36E639952B71E62600BED3A5 /* TFYThemeKit.bundle */; };
+		36E639A42B724E9D00BED3A5 /* TFYBaseThemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E639A32B724E9D00BED3A5 /* TFYBaseThemeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		36E6398C2B7105F500BED3A5 /* DIN-BoldItalicExp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-BoldItalicExp.otf"; sourceTree = "<group>"; };
 		36E6398D2B7105F500BED3A5 /* DIN-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-BlackItalic.otf"; sourceTree = "<group>"; };
 		36E639952B71E62600BED3A5 /* TFYThemeKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TFYThemeKit.bundle; sourceTree = "<group>"; };
+		36E639A22B724E9D00BED3A5 /* TFYBaseThemeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFYBaseThemeController.h; sourceTree = "<group>"; };
+		36E639A32B724E9D00BED3A5 /* TFYBaseThemeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFYBaseThemeController.m; sourceTree = "<group>"; };
 		6A8417408095A5042049F8C0 /* Pods-TFYThemeCompany.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFYThemeCompany.release.xcconfig"; path = "Target Support Files/Pods-TFYThemeCompany/Pods-TFYThemeCompany.release.xcconfig"; sourceTree = "<group>"; };
 		92287ED58AE0F5C9761A72CE /* libPods-TFYThemeCompany.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFYThemeCompany.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFA26E4F8EC1135DDC7AACC /* Pods-TFYThemeCompany.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFYThemeCompany.debug.xcconfig"; path = "Target Support Files/Pods-TFYThemeCompany/Pods-TFYThemeCompany.debug.xcconfig"; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				36E6397D2B70B71800BED3A5 /* TFYThemeThreeController.m */,
 				36E6397B2B70B71800BED3A5 /* TFYThemeTwoController.h */,
 				36E6397F2B70B71800BED3A5 /* TFYThemeTwoController.m */,
+				36E639A22B724E9D00BED3A5 /* TFYBaseThemeController.h */,
+				36E639A32B724E9D00BED3A5 /* TFYBaseThemeController.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 				36E6393C2B7092AF00BED3A5 /* TFYTheme.m in Sources */,
 				36E639592B70A3A600BED3A5 /* main.m in Sources */,
 				36E639422B70932700BED3A5 /* TFYThemePicker.m in Sources */,
+				36E639A42B724E9D00BED3A5 /* TFYBaseThemeController.m in Sources */,
 				36E639362B708BA100BED3A5 /* TFYZipArchive.m in Sources */,
 				36E639842B70B71800BED3A5 /* TFYThemeFourController.m in Sources */,
 				36E639862B70B71800BED3A5 /* TFYThemeOneController.m in Sources */,

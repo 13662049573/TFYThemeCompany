@@ -36,8 +36,7 @@
     
         [self.contentView addSubview:self.botton];
         [self.botton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(self.backImageView).offset(0);
-            make.bottom.equalTo(self.backImageView).offset(-5);
+            make.right.top.equalTo(self.backImageView).offset(0);
             make.size.mas_equalTo(CGSizeMake(80, 35));
         }];
    
@@ -46,7 +45,6 @@
         
         [self.botton tfy_titleFont:@"f10"];
         [self.botton tfy_backgroundColor:@"c7"];
-        [self.botton tfy_backgroundColor:@"c8"];
     }
     return self;
 }

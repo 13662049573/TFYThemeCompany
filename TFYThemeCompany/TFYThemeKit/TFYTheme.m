@@ -219,6 +219,11 @@ NSString *const THEME_ROOTPATH = @"/Library/UserData/Skin/CurrentTheme";
     return image;
 }
 
++ (UIImage *)imageNamed:(NSString *)name tintColor:(NSString *)tintColor {
+    UIImage *image = [self imageNamed:name];
+    return [image tfy_imageWiththemeTintColor:[self colorForType:tintColor]];
+}
+
 + (UIImage *)imageForColorType:(NSString *)type size:(CGSize)size {
    return [UIImage tfy_imageWithColor:[TFYTheme colorForType:type] size:size];
 }
