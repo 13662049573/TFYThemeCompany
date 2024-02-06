@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/13662049573/TFYThemeCompany.git", :tag => spec.version}
 
-  spec.source_files  = "TFYThemeCompany/TFYThemeKit/TFYThemeKit.h"
+  spec.source_files  = "TFYThemeCompany/TFYThemeCompany/TFYThemeKit/TFYThemeKit.h"
   
   spec.subspec 'TFYThemeKit' do |ss|
 
