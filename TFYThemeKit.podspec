@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 主题配置，自定义和网络都可以使用，最低支持iOS13以上版本。
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/TFYThemeKit"
+  spec.homepage     = "https://github.com/13662049573/TFYThemeCompany"
   
   spec.license      = "MIT"
  
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   
   spec.platform     = :ios, "13.0"
 
-  spec.source       = { :git => "http://EXAMPLE/TFYThemeKit.git", :tag => spec.version}
+  spec.source       = { :git => "https://github.com/13662049573/TFYThemeCompany.git", :tag => spec.version}
 
   spec.source_files  = "TFYThemeCompany/TFYThemeKit/TFYThemeKit.h"
   
