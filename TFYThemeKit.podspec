@@ -27,12 +27,12 @@ Pod::Spec.new do |spec|
 
     ss.source_files = "TFYThemeCompany/TFYThemeCompany/TFYThemeKit/TFYThemeKit/*.{h,m}"
 
-    ss.resources    = "TFYThemeCompany/TFYThemeCompany/TFYThemeKit/TFYThemeKit.bundle"
-
     ss.subspec 'TFYminizip' do |s|
         s.source_files  = "TFYThemeCompany/TFYThemeCompany/TFYThemeKit/TFYminizip/*.{h,c}"
     end
   end
+
+  spec.resources    = "TFYThemeCompany/TFYThemeCompany/TFYThemeKit/TFYThemeKit.bundle"
 
   spec.frameworks   = "Foundation","UIKit"
 
