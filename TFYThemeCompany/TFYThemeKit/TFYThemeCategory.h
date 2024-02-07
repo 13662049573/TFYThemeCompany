@@ -164,18 +164,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TfySY_TabBarConfigModel (tabbarTheme)
 - (void)tfy_imageInsets:(NSString *)type;
+- (void)tfy_badgePoint:(NSString *)type;
 - (void)tfy_imageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
 - (void)tfy_selectedImageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
-- (void)tfy_titleTextColorType:(NSString *)colorType font:(NSString *)fontType;
-- (void)tfy_selectedtitleTextColorType:(NSString *)colorType font:(NSString *)fontType;
+- (void)tfy_titleTextColorType:(NSString *)colorType;
+- (void)tfy_selectedtitleTextColorType:(NSString *)colorType;
 @end
 
 @interface TfySY_TabBarItem (tabbarTheme)
 - (void)tfy_imageInsets:(NSString *)type;
+- (void)tfy_badgePoint:(NSString *)type;
 - (void)tfy_imageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
 - (void)tfy_selectedImageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode;
-- (void)tfy_titleTextColorType:(NSString *)colorType font:(NSString *)fontType;
-- (void)tfy_selectedtitleTextColorType:(NSString *)colorType font:(NSString *)fontType;
+- (void)tfy_titleTextColorType:(NSString *)colorType;
+- (void)tfy_selectedtitleTextColorType:(NSString *)colorType;
 @end
 #endif
 

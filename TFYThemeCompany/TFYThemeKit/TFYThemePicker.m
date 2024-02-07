@@ -152,4 +152,14 @@
     return picker;
 }
 
+#pragma mark - ThemebadgePointPicker
++ (instancetype)initWithbadgePoint:(NSString *)type {
+    TFYThemePicker *picker = [[TFYThemePicker alloc]init];
+    picker.type = ThemePicker_badgePoint;
+    picker.block = ^() {
+        return [NSValue valueWithCGPoint:[TFYTheme pointForType:type]];
+    };
+    return picker;
+}
+
 @end

@@ -22,12 +22,12 @@
         "f4": "20",
         "f5": "30",
         "f6": "15",
-        "f7": "12",
+        "f7": "12"
     },
     "coordinators": {
         "NMTabBarBadgePointViewOriginOffset": "{0,0}",
         "NMTabBarBadgePointViewHighlightOriginOffset": "{0,0}",
-        "NMTabBarBadgeTextViewOriginOffset": "{0,0}",
+        "NMTabBarBadgeTextViewOriginOffset": "{30,10}",
         "NMTabBarBadgeTextViewHighlightOriginOffset": "{0,0}"
     },
     "hideseparator": 1

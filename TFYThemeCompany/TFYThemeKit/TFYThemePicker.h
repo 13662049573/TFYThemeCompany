@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, ThemePickerType) {
     ThemePicker_CGFloat,
     ThemePicker_CGColor,
     ThemePicker_EdgeInset,
+    ThemePicker_badgePoint,
     ThemePicker_StatusBar
 };
 
@@ -55,6 +56,9 @@ typedef id _Nonnull (^ThemePickerBlock)(void);
 
 #pragma mark - ThemeStatusBarPicker
 + (instancetype)initWithStatusBarAnimated:(BOOL)animated;
+
+#pragma mark - ThemebadgePointPicker
++ (instancetype)initWithbadgePoint:(NSString *)type;
 @end
 
 NS_ASSUME_NONNULL_END

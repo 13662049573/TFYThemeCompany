@@ -43,14 +43,13 @@
     [VCArray enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         TfySY_TabBarConfigModel *model = [TfySY_TabBarConfigModel new];
         model.interactionEffectStyle = TfySY_TabBarInteractionEffectStyleSpring;
-        model.itemLayoutStyle = TfySY_TabBarItemLayoutStylePicture;
-        
-        [model tfy_imageInsets:@"NMTabBarBadgeTextViewOriginOffset"];
-        [model tfy_titleTextColorType:@"ctabn" font:@"f2"];
-        [model tfy_selectedtitleTextColorType:@"ctabn" font:@"f2"];
+        model.itemTitle = obj[@"itemTitle"];
+//        model.itemLayoutStyle = TfySY_TabBarItemLayoutStylePicture;
+        [model tfy_titleTextColorType:@"c8"];
+        [model tfy_selectedtitleTextColorType:@"ctabh"];
         [model tfy_imageNamed:obj[@"normalImg"] renderingMode:UIImageRenderingModeAlwaysOriginal];
         [model tfy_selectedImageNamed:obj[@"selectImg"] renderingMode:UIImageRenderingModeAlwaysOriginal];
-        
+        model.badge = @"99";
         UIViewController *controller = obj[@"vc"];
         TFY_NavigationController *nav = [[TFY_NavigationController alloc] initWithRootViewController:controller];
         [tabBarVCs addObject:nav];// 5.将VC添加到系统控制组
@@ -65,12 +64,12 @@
     NSArray *normalImages = @[@"cm2_btm_icn_discovery",@"cm2_btm_icn_music",@"cm2_btm_icn_friend",@"cm2_btm_icn_account"];
     NSArray *prsImages = @[@"cm2_btm_icn_discovery_prs",@"cm2_btm_icn_music_prs",@"cm2_btm_icn_friend_prs",@"cm2_btm_icn_account_prs"];
     [self.tfySY_TabBar.tabBarItems enumerateObjectsUsingBlock:^(TfySY_TabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [obj tfy_imageInsets:@"NMTabBarBadgeTextViewOriginOffset"];
-        [obj tfy_titleTextColorType:@"ctabn" font:@"f2"];
-        [obj tfy_selectedtitleTextColorType:@"ctabn" font:@"f2"];
+        [obj tfy_titleTextColorType:@"c8"];
+        [obj tfy_selectedtitleTextColorType:@"ctabn"];
         [obj tfy_imageNamed:normalImages[idx] renderingMode:UIImageRenderingModeAlwaysOriginal];
         [obj tfy_selectedImageNamed:prsImages[idx] renderingMode:UIImageRenderingModeAlwaysOriginal];
         obj.isSelect = !obj.isSelect;
+        obj.badge = @"99";
     }];
 }
 

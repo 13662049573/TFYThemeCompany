@@ -150,6 +150,12 @@ static NSPointerArray *themeHashTable;
             func(self, selector, empty.UIEdgeInsetsValue);
         }
             break;
+        case ThemePicker_badgePoint: {
+            void (*func)(id, SEL, CGPoint) = (void *)imp;
+            NSValue *empty = value;
+            func(self, selector, empty.CGPointValue);
+        }
+            break;
         case ThemePicker_StatusBar: {
             void (*func)(id, SEL, UIStatusBarStyle, BOOL) = (void *)imp;
             NSNumber *num = value;
@@ -667,6 +673,11 @@ static NSPointerArray *themeHashTable;
                   picker:[TFYThemePicker initWithImageInsets:type]];
 }
 
+- (void)tfy_badgePoint:(NSString *)type {
+    [self tfy_setThemePicker:self selector:@"setBadgePoint:"
+                  picker:[TFYThemePicker initWithbadgePoint:type]];
+}
+
 - (void)tfy_imageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode {
     [self tfy_setThemePicker:self selector:@"setNormalImage:"
                   picker:[TFYThemePicker initWithImageName:name renderingMode:mode]];
@@ -677,14 +688,14 @@ static NSPointerArray *themeHashTable;
                   picker:[TFYThemePicker initWithImageName:name renderingMode:mode]];
 }
 
-- (void)tfy_titleTextColorType:(NSString *)colorType font:(NSString *)fontType {
+- (void)tfy_titleTextColorType:(NSString *)colorType {
     [self tfy_setThemePicker:self selector:@"setNormalColor:"
-                  picker:[TFYThemePicker initWithColorType:fontType]];
+                  picker:[TFYThemePicker initWithColorType:colorType forState:UIControlStateNormal]];
 }
 
-- (void)tfy_selectedtitleTextColorType:(NSString *)colorType font:(NSString *)fontType {
+- (void)tfy_selectedtitleTextColorType:(NSString *)colorType {
     [self tfy_setThemePicker:self selector:@"setSelectColor:"
-                  picker:[TFYThemePicker initWithColorType:fontType]];
+                  picker:[TFYThemePicker initWithColorType:colorType forState:UIControlStateSelected]];
 }
 @end
 @implementation TfySY_TabBarItem (tabbarTheme)
@@ -693,6 +704,11 @@ static NSPointerArray *themeHashTable;
                   picker:[TFYThemePicker initWithImageInsets:type]];
 }
 
+- (void)tfy_badgePoint:(NSString *)type {
+    [self tfy_setThemePicker:self selector:@"setBadgePoint:"
+                  picker:[TFYThemePicker initWithbadgePoint:type]];
+}
+
 - (void)tfy_imageNamed:(NSString *)name renderingMode:(UIImageRenderingMode)mode {
     [self tfy_setThemePicker:self selector:@"setNormalImage:"
                   picker:[TFYThemePicker initWithImageName:name renderingMode:mode]];
@@ -703,14 +719,14 @@ static NSPointerArray *themeHashTable;
                   picker:[TFYThemePicker initWithImageName:name renderingMode:mode]];
 }
 
-- (void)tfy_titleTextColorType:(NSString *)colorType font:(NSString *)fontType {
+- (void)tfy_titleTextColorType:(NSString *)colorType {
     [self tfy_setThemePicker:self selector:@"setNormalColor:"
-                  picker:[TFYThemePicker initWithColorType:fontType]];
+                  picker:[TFYThemePicker initWithColorType:colorType forState:UIControlStateNormal]];
 }
 
-- (void)tfy_selectedtitleTextColorType:(NSString *)colorType font:(NSString *)fontType {
+- (void)tfy_selectedtitleTextColorType:(NSString *)colorType {
     [self tfy_setThemePicker:self selector:@"setSelectColor:"
-                  picker:[TFYThemePicker initWithColorType:fontType]];
+                  picker:[TFYThemePicker initWithColorType:colorType forState:UIControlStateSelected]];
 }
 @end
 #endif

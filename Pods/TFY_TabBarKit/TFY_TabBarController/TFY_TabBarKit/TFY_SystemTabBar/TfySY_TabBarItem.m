@@ -293,7 +293,6 @@
     return _badgeLabel;
 }
 
-
 @end
 
 @implementation TfySY_TabBarConfigModel
